@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>PORTFOLIO</title>
+<meta name="description" content="">
+<meta name="author" content="">
+ <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/custom.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>$('#myModal').modal()</script>
+<script src="js/formvalidation.js"></script>
+<script src="js/html5placeholder.jquery.js"></script>
+<script src="js/jquery.tweet.js"></script>
+</head>
+<body>
+<div class="topline">
+</div>
+<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</a>
+			<div class="nav-collapse collapse">
+				<ul class="nav leftmenu">
+					
+					<li><a href="index.html">Menu</a></li>
+					<li><a href="about.html">A propos de moi</a></li>
+				</ul>
+				<ul class="nav rightmenu">
+					<li><a href="portofolio.html">Portofolio & projets</a></li>
+					<li class="lastmenu"><a href="contact.html" class="lastmenu">Contact</a></li>
+				</ul>
+				<div id="myModal" class="modal hide fade hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+						<h3 id="myModalLabel">Envoyez moi un message</h3>
+					</div>
+					<div class="modal-body">
+						<div class="done">
+							<div class="alert alert-success">
+								<button type="button" class="close" data-dismiss="alert">x</button>
+								<strong>Message bien envoyé</strong><br/>
+							</div>
+						</div>
+						<div class="form">
+							<form method="post" action="process.php" id="contactform">
+								<table>
+								<tbody>
+								<tr class="element">
+									<td class="noborder">
+									</td>
+									<td class="noborder">
+										<input type="text" name="name" class="text input-xlarge" placeholder="Name">
+									</td>
+								</tr>
+								<tr class="element">
+									<td class="noborder">
+									</td>
+									<td class="noborder">
+										<input type="text" name="email" class="text input-xlarge" placeholder="E-mail address">
+									</td>
+								</tr>
+								<tr class="element texttop">
+									<td class="noborder">
+									</td>
+									<td class="noborder">
+										<textarea name="comment" class="text textarea input-xlarge contactarea" placeholder="Project details, requirements, budget"></textarea>
+									</td>
+								</tr>
+								<tr class="element">
+									<td class="noborder">
+										 &nbsp;
+									</td>
+									<td class="noborder">
+										<input type="submit" id="submit" class="btn" value="Submit">
+										<div class="loading">
+										</div>
+									</td>
+								</tr>
+								</tbody>
+								</table>
+							</form>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button class="btn" data-dismiss="modal">Sortie</button>
+					</div>
+				</div>
+			</div>
+			<a class="brand logo" href="#">Perla<br/>Assuied</a>
+			<div class="hiremebadge">
+				<div class="hiremetext">
+					<a data-toggle="modal" href="#myModal"></a>
+				</div>
+			</div>
+	</div>
+</div>
+<div class="container">
+	<h1 class="title">Un peu de moi</h1>
+	<div class="titlelinesimple">
+	</div>
+	<div class="row">
+		<div class="span8">
+			<p>
+				Je m'appelle Perla Assuied, je suis actuellement dans une école d'informatiques, dernièrement j'ai passé mon bac, que j'ai obtenue avec la mention bien, voici les différente spécialité: économies, géopolitique et mathématiques.
+			</p>
+		</div>
+		<div class="span8">
+			<p>
+				Après mon bac, j'ai fait une première année de droit, que j'ai obtenue, ne voulant pas continuer dans cette branche je me suis réorienter dans l'informatique quelques année plus tard, découvrant une vrai passion pour tout ce qui est du developpement web.
+			</p>
+		</div>
+	</div>
+	<div class="break">
+	</div>
+	<br/>
+	<div class="row">
+		<div class="span4">
+			<img src="img/arrow.png" alt="" style="margin-left: 40px;">
+		</div>
+		<div class="span4">
+			<h4 class="highlight">Passions</h4>
+			<p>
+				Je suis une grande passionnée de sport, je fait de l'équitation, du voleyball qui est un sport collectif il apprend à travailler avec d’autres personnes vers un objectif commun. Cela favorise la coopération, la solidarité et l'écoute mutuelle.
+			</p>
+		</div>
+		<div class="span4">
+			<h4 class="highlight">Passe-temps</h4>
+			<p>
+				Quand j'ai du temps libre, je lis beaucoup de roman policier, j'aime beaucoup cuisiner. J'ai aussi beaucoup de passe temps intellectuel, comme les jeux de reflexion et les jeux de stratégie tel que les échecs et les dames.
+			</p>
+		</div>
+		<div class="span4">
+			<h4 class="highlight">Compétences</h4>
+			<p>
+				 Je suis capable d'analyser un problème technique et à trouver des solutions créatives et efficaces. je peux travailler efficacement avec d'autres développeurs, designers, chefs de projets et parties prenantes. J'ai des compétences en communication pour partager des idées techniques avec des non-spécialistes. J'ai aussi une grande capacité d'adaptation et d'autonomie.
+			</p>
+		</div>
+	</div>
+	<div class="footerli">
+	</div>
+	<div class="tweetarea">
+		<div class="tweettext">
+			<div class="row">
+				<div class="span-one-third">
+					<div class="tweet">
+					</div>
+				</div>
+				<div class="span-one-third">
+					<div class="centermargin">
+						<div class="facebook">
+							<a href="#"></a>
+						</div>
+						<div class="twitter">
+							<a href="#"></a>
+						</div>
+						<div class="google">
+							<a href="#"></a>
+						</div>
+						<div class="flickr">
+							<a href="#"></a>
+						</div>
+					</div>
+				</div>
+				<div class="span-one-third center">
+					 Tu penses à un projets <br/>Contacte moi directement<br/>
+					<span class="small"><a href="mailto:emailhire@gmail.com">perla.assuied@laplateforme.io</a></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer center">
+	</div>
+</div>
+<div class="footerend">
+</div>
+</body>
+</html>
