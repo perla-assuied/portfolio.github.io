@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title> Assuied Perla - Responsive Portofolio</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/custom.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>$('#myModal').modal()</script>
+<script src="js/formvalidation.js"></script>
+<script src="js/html5placeholder.jquery.js"></script>
+<script src="js/jquery.tweet.js"></script>
+</head>
+<body>
+<div class="topline">
+</div>
+<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</a>
+			<div class="nav-collapse collapse">
+				<ul class="nav leftmenu">
+					
+					<li><a href="index.html">Menu</a></li>
+					<li><a href="about.html">A propos de moi </a></li>
+				</ul>
+				<ul class="nav rightmenu">
+					<li><a href="portofolio.html">Portofolio & projets</a></li>
+					<li class="lastmenu"><a href="contact.html" class="lastmenu">Contact</a></li>
+				</ul>
+				<div id="myModal" class="modal hide fade hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+						<h3 id="myModalLabel">Envoyez moi un message</h3>
+					</div>
+					<div class="modal-body">
+						<div class="done">
+							<div class="alert alert-success">
+								<button type="button" class="close" data-dismiss="alert">x</button>
+								<strong>Message bien envoyé!</strong><br/>
+							</div>
+						</div>
+						<div class="form">
+							<form method="post" action="process.php" id="contactform">
+								<table>
+								<tbody>
+								<tr class="element">
+									<td class="noborder">
+									</td>
+									<td class="noborder">
+										<input type="text" name="name" class="text input-xlarge" placeholder="Name">
+									</td>
+								</tr>
+								<tr class="element">
+									<td class="noborder">
+									</td>
+									<td class="noborder">
+										<input type="text" name="email" class="text input-xlarge" placeholder="E-mail address">
+									</td>
+								</tr>
+								<tr class="element texttop">
+									<td class="noborder">
+									</td>
+									<td class="noborder">
+										<textarea name="comment" class="text textarea input-xlarge contactarea" placeholder="Project details, requirements, budget"></textarea>
+									</td>
+								</tr>
+								<tr class="element">
+									<td class="noborder">
+										 &nbsp;
+									</td>
+									<td class="noborder">
+										<input type="submit" id="submit" class="btn" value="Submit">
+										<div class="loading">
+										</div>
+									</td>
+								</tr>
+								</tbody>
+								</table>
+							</form>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button class="btn" data-dismiss="modal">Fermer</button>
+					</div>
+				</div>
+			</div>
+			<a class="brand logo" href="#">Perla<br/>Assuied</a>
+			<div class="hiremebadge">
+				<div class="hiremetext">
+					<a data-toggle="modal" href="#myModal"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="hero-unit">
+		<h1>Bienvenu dans mon Portfolio.</h1>
+		<p>
+			Bienvenue sur mon portfolio ! Je suis Perla Assuied, une passionnée d'informatique et de création numérique. Mon objectif est de concevoir des applications et des solutions qui simplifient la vie des utilisateurs, tout en repoussant les limites de l'innovation.
+		</p>
+	</div>
+	<div class="row">
+		<div class="span16">
+			<div id="myCarousel" class="carousel slide">
+				<div class="carousel-inner imglist">
+					<div class="item">
+						<img src="img/slider/1.jpg" alt="">
+						<div class="carousel-caption">
+							<h4>First Thumbnail label</h4>
+							<p>
+								 Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.
+							</p>
+						</div>
+					</div>
+					<div class="item active">
+						<img src="img/slider/2.jpg" alt="">
+						<div class="carousel-caption">
+							<h4>Second Thumbnail label</h4>
+							<p>
+								 Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="img/slider/3.jpg" alt="">
+						<div class="carousel-caption">
+							<h4>Third Thumbnail label</h4>
+							<p>
+								 Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.
+							</p>
+						</div>
+					</div>
+				</div>
+				<a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+				<a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+			</div>
+		</div>
+	</div>
+	<br/>
+	<div class="row">
+		<div class="span-one-third">
+			<h3>Professionelle</h3>
+			<p>
+				Je sais diriger une équipe, prendre des décisions et inspirer les autres, organiser ses tâches pour respecter les délais et les priorités, je suis flexible et je m'adapte aux changements ou aux situations imprévues.
+			</p>
+			<p>
+				<a class="btn" href="about.html">Plus sur moi</a>
+			</p>
+		</div>
+		<div class="span-one-third">
+			<h3>Personnelle</h3>
+			<p>
+				Je sais écouter et m'exprimer clairement, à l'oral et à l'écrit, je suis empathique et je sais gérer mes émotions, tout en respectant celles des autres. Je sais prendre des actions proactives pour faire avancer les projets ou améliorer les processus.
+			</p>
+			<p>
+				<a class="btn" href="portofolio.html">Voir le portfolio</a>
+			</p>
+		</div>
+		<div class="span-one-third">
+			<h3>Valeurs</h3>
+			<p>
+				Je prends la responsabilité de mes actions et leurs conséquences, je suis à la recherche d'équité et de traitements justes pour tous, sans favoritisme. Je suis digne de confiance, respecter ses engagements et ses délais.
+			</p>
+			<p>
+				<a class="btn" href="contact.html">Contact</a>
+			</p>
+		</div>
+	</div>
+	<div class="footerli">
+	</div>
+	<div class="tweetarea">
+		<div class="tweettext">
+			<div class="row">
+				<div class="span-one-third">
+					<i>Merci d’avoir pris le temps de découvrir mon travail. Si vous êtes intéressé(e) par mes projets ou souhaitez collaborer, n’hésitez pas à me contacter.</i>
+				</div>
+				<div class="span-one-third">
+					<div class="centermargin">
+						<div class="facebook">
+							<a href="Perla-Assuied"></a>
+						</div>
+						<div class="twitter">
+							<a href="Perla.assd27"></a>
+						</div>
+						<div class="google">
+							<a href="https://mail.google.com/mail/u/0/?ogbl#inbox"></a>
+						</div>
+						<div class="flickr">
+							<a href="Perla.assuied3"></a>
+						</div>
+					</div>
+				</div>
+				<div class="span-one-third center">
+					 Tu penses à un projet ? <br/>Contacte moi directement <br/>
+					<span class="small"><a href="perla.assuied@laplateforme.io">perla.assuied@laplateforme.io</a></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer center">
+
+	</div>
+</div>
+<div class="footerend">
+</div>
+</body>
+</html>
